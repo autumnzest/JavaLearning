@@ -32,6 +32,8 @@ public class DataTest {
 		//toJoiningTest();
 		
 		//reduce();
+		
+		//sortTest();
 	}
 	
 	/**
@@ -262,5 +264,16 @@ public class DataTest {
                     return y;
                 }));
         System.out.println(collect);
+    }
+    
+    /**
+     * sort
+     */
+    public static void sortTest() {
+        List<PersonModel> data = Data.getData();
+        data.stream()
+        .map(e -> e.getAge())
+        .sorted()
+        .forEach(System.out::println);
     }
 }
