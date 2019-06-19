@@ -34,6 +34,8 @@ public class DataTest {
 		//reduce();
 		
 		//sortTest();
+		
+		//peekTest();
 	}
 	
 	/**
@@ -275,5 +277,19 @@ public class DataTest {
         .map(e -> e.getAge())
         .sorted()
         .forEach(System.out::println);
+    }
+    
+    /**
+     * peek: dont stop the stream
+     */
+    private static void peekTest() {
+        List<PersonModel> data = Data.getData();
+
+		data.stream()
+		.map(per -> per.getName())
+		.peek(p -> System.out.println("mapName:"+p))
+		.map(pern -> pern.toUpperCase())
+		.peek(p -> System.out.println("upName:"+p))
+		.collect(Collectors.toList());
     }
 }
