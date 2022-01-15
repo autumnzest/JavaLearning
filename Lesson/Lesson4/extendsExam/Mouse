@@ -1,0 +1,14 @@
+package extendsExam;
+
+public class Mouse extends Animal { 
+    private String name; 
+    public Mouse(String myName, int myid) { 
+        super(myName, myid); 
+        name = "Bill";
+    } 
+    
+    public void study() { 
+        //System.out.println(super.name+"正在学习"); 
+        System.out.println(this.name+"正在学习"); 
+    } 
+}
