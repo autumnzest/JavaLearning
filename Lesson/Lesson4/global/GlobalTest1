@@ -1,0 +1,6 @@
+package global;
+
+public class GlobalTest1 {
+	  //static変数
+	  public static String gString1="bigca";
+}
