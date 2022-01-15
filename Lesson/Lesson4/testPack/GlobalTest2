@@ -1,0 +1,6 @@
+package testPack;
+
+public class GlobalTest2 {
+	  //static変数
+	  public static String gString2;
+}
