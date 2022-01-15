@@ -1,0 +1,53 @@
+package global;
+
+import testPack.GlobalTest2;
+
+public class GlobalMain {
+
+  public static void main(String args[]){
+
+    //クラスの外から直接変数を参照できることを確認
+    GlobalTest1.gString1 = "あいう";
+    GlobalTest2.gString2 = "かきく";
+    System.out.println("gString1:" + GlobalTest1.gString1);
+    System.out.println("gString2:" + GlobalTest2.gString2);
+
+    System.out.println("------------------");
+
+    //インスタンスからも参照できることを確認
+    //また、どのインスタンスからでも同じ変数を参照していることを確認
+    GlobalTest1 gTest1_a = new GlobalTest1();
+    GlobalTest1 gTest1_b = new GlobalTest1();
+    GlobalTest1 gTest1_c = new GlobalTest1();
+    System.out.println("gTest1_a.gString1:" + gTest1_a.gString1);
+    System.out.println("gTest1_b.gString1:" + gTest1_b.gString1);
+    System.out.println("gTest1_c.gString1:" + gTest1_c.gString1);
+
+    //ローカル変数の参照可能な範囲の確認
+    int i;
+    if(true){
+      i = 0;
+      int j;
+
+      if(true){
+        j = 0;
+        int k;
+      }
+      /*
+      ここではkを参照できない。
+      k = 0;
+      */
+    }
+    /*
+    ここではjを参照できない。
+    j = 0;
+    */
+  }
+
+  void test(){
+    /*
+    ここではiを参照できない。
+    i = 0;
+    */
+  }
+}
