@@ -1,0 +1,39 @@
+package extendsExam;
+
+public class Test {
+
+	public static void main(String[] args) {
+		//
+//		Penguin2 p2 = new Penguin2("Tom",3);
+//		p2.introduction();
+//		p2.eat();
+//		p2.sleep();
+////		
+////		//
+//		Mouse2 m2 = new Mouse2("Jerry",2);
+//		m2.introduction();
+//		m2.eat();
+//		m2.sleep();
+//		
+//		//
+//		Penguin p1 = new Penguin("Tom",100);
+//		p1.introduction();
+//		p1.eat();
+//		p1.sleep();
+////		p1.study();
+//		
+//		//
+//		Mouse m1 = new Mouse("Jerry",999);
+//		m1.introduction();
+//		m1.eat();
+//		m1.sleep();
+//		m1.study();
+		
+		//super,this
+	    Animal a = new Animal("a",0);
+	    a.eat();
+	    Dog d = new Dog("d",0);
+	    d.eatTest();
+	}
+
+}
