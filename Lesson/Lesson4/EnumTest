@@ -1,0 +1,67 @@
+enum Color
+{
+    RED, GREEN, BLUE;
+}
+ 
+public class EnumTest
+{
+//	内部类
+//    enum Color
+//    {
+//        RED, GREEN, BLUE;
+//    }
+	
+    // 执行输出结果
+    public static void main(String[] args)
+    {
+        Color c1 = Color.RED;
+        System.out.println(c1);
+        
+        //迭代枚举元素
+//        forEnum();
+        
+        //switch
+//        switchEnum();
+        
+        //func
+        enumFunc();
+    }
+    
+    public static void forEnum() {
+        for (Color myVar : Color.values()) {
+            System.out.println(myVar);
+          }
+    }
+    
+    public static void switchEnum() {
+        Color myVar = Color.BLUE;
+
+        switch(myVar) {
+          case RED:
+            System.out.println("红色");
+            break;
+          case GREEN:
+             System.out.println("绿色");
+            break;
+          case BLUE:
+            System.out.println("蓝色");
+            break;
+        }
+    }
+    
+    public static void enumFunc() {
+        // 调用 values()
+        Color[] arr = Color.values();
+ 
+        // 迭代枚举
+        for (Color col : arr)
+        {
+            // 查看索引
+            System.out.println(col + " at index " + col.ordinal());
+        }
+ 
+        // 使用 valueOf() 返回枚举常量，不存在的会报错 IllegalArgumentException
+        System.out.println(Color.valueOf("RED"));
+        // System.out.println(Color.valueOf("WHITE"));
+    }
+}
