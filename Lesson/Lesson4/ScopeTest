@@ -1,0 +1,44 @@
+package scope;
+
+public class ScopeTest {
+
+	public static void main(String[] args) {
+		// Code here CANNOT use x
+
+		{ // This is a block
+
+			// Code here CANNOT use x
+
+			int x = 100;
+
+			// Code here CAN use x
+//			System.out.println(x);
+
+		} // The block ends here
+
+		// Code here CANNOT use x
+
+		// for循环
+		example9();
+	}
+
+	// for
+	private static void example9() {
+		int z = 10086;
+		for (int x = 10; x < 20; x = x + 10) {
+			{
+				int y = 123;
+				System.out.println("x1 : " + x);
+				System.out.println("y1 : " + y);
+				System.out.println("z1 : " + z);
+			}
+			System.out.println("x2 : " + x);
+			System.out.println("z2 : " + z);
+//			System.out.print("y2 : " + y);
+		}
+//		System.out.print("x3 : " + x);
+		System.out.println("z3 : " + z);
+//		System.out.print("y3 : " + y);
+	}
+
+}
