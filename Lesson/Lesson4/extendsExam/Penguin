@@ -1,0 +1,7 @@
+package extendsExam;
+
+public class Penguin extends Animal { 
+    public Penguin(String myName, int myid) { 
+        super(myName, myid); // 声明继承父类中的两个属性
+    } 
+}
