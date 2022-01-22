@@ -1,0 +1,26 @@
+package Ploy1;
+
+/**
+ * 饲养员
+ */
+public class AnimalKeeper {
+
+    /**
+     * 给宠物猫喂食
+     *
+     * @param cat
+     */
+    public void feed(Cat cat) {
+        cat.eat();
+    }
+
+    /**
+     * 给宠物狗喂食
+     *
+     * @param dog
+     */
+    public void feed(Dog dog) {
+        dog.eat();
+    }
+
+}
