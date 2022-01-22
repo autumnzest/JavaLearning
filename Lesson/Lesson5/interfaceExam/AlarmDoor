@@ -1,0 +1,20 @@
+package interfaceExam;
+
+public class AlarmDoor extends Door implements Alarm {
+	@Override
+	public void open() {
+		// ....
+		System.out.println("open!");
+	}
+
+	@Override
+	public void close() {
+		// ....
+		System.out.println("close!");
+	}
+
+	public void alarm() {
+		// ....
+		System.out.println("alarm!");
+	}
+}
