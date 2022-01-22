@@ -1,0 +1,11 @@
+package interfaceExam;
+
+//文件名: Hockey.java
+public interface Hockey extends Sports
+{
+public void homeGoalScored();
+public void visitingGoalScored();
+public void endOfPeriod(int period);
+public void overtimePeriod(int ot);
+}
+//Hockey接口自己声明了四个方法，从Sports接口继承了两个方法，这样，实现Hockey接口的类需要实现六个方法。
