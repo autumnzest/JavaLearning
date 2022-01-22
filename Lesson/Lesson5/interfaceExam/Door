@@ -1,0 +1,9 @@
+package interfaceExam;
+
+public abstract class Door {
+	abstract void open();
+
+	abstract void close();
+
+	// public abstract void renew();
+}
