@@ -1,0 +1,5 @@
+package interfaceExam;
+
+public interface ChineseFootball extends Football,Sports{
+	public void kick();
+}
