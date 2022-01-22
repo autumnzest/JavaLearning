@@ -1,0 +1,28 @@
+package Ploy1;
+
+public class PolymorphicTest {
+
+    public static void main(String[] args) {
+        //创建饲养员对象
+        AnimalKeeper animalKeeper = new AnimalKeeper();
+
+        //创建宠物对象
+        Cat cat = new Cat();
+        animalKeeper.feed(cat);//猫吃鱼！
+
+        Dog dog = new Dog();
+        animalKeeper.feed(dog);//狗啃骨头！
+    }
+    
+    public static void change() {
+    	   //创建饲养员对象
+    	    AnimalKeeperPolymorphic animalKeeper = new AnimalKeeperPolymorphic();
+
+    	    //创建宠物对象
+    	    Cat cat = new Cat();
+    	    animalKeeper.feed(cat);//猫吃鱼！
+
+    	    Dog dog = new Dog();
+    	    animalKeeper.feed(dog);//狗啃骨头！
+    	}
+}
