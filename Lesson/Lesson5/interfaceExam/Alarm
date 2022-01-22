@@ -1,0 +1,5 @@
+package interfaceExam;
+
+interface Alarm {
+    void alarm();
+}
