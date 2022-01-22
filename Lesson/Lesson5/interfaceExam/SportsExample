@@ -1,0 +1,6 @@
+package interfaceExam;
+
+public class SportsExample implements ChineseFootball{
+
+
+}
