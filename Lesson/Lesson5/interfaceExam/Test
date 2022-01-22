@@ -1,0 +1,12 @@
+package interfaceExam;
+
+public class Test {
+
+	public static void main(String[] args) {
+		AlarmDoor ad = new AlarmDoor();
+		ad.open();
+		ad.close();
+		ad.alarm();
+	}
+
+}
