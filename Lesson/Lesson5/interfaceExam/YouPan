@@ -1,0 +1,12 @@
+package interfaceExam;
+
+class YouPan implements USB {
+    @Override
+    public void read() {
+        System.out.println("U盘正在通过USB功能读取数据");
+    }
+    @Override
+    public void write() {
+        System.out.println("U盘正在通过USB功能写入数据");
+    }
+}
